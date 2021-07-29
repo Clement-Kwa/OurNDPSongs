@@ -69,7 +69,7 @@ public class EditSong extends AppCompatActivity {
                 String singers = etSingers.getText().toString();
                 int year = Integer.parseInt(etYear.getText().toString());
 
-                int stars = ratingBar.getNumStars();
+                int stars = (int)ratingBar.getRating();
 
                 data.setSongContent(title, singers, year, stars);
                 dbh.updateSong(data);

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                int stars = ratingBar.getNumStars();
+                int stars = (int)ratingBar.getRating();
 
                 sg.edu.rp.c346.id20002694.ourndpsongs.DBHelper dbh = new sg.edu.rp.c346.id20002694.ourndpsongs.DBHelper(sg.edu.rp.c346.id20002694.ourndpsongs.MainActivity.this);
                 dbh.insertSong(title, singer, year, stars);

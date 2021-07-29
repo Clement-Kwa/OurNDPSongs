@@ -56,7 +56,7 @@ public class CustomAdapter extends ArrayAdapter {
         else{
             iv.setVisibility(View.INVISIBLE);
         }
-
+//clement
         return rowView;
     }
 
